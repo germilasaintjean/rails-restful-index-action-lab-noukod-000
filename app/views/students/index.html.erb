@@ -1,9 +1,5 @@
-
-  <div>
-    <p>Multiple students</p>
-    <!-- <% @students.each do |student| %> -->
-    <!-- <div><%= @student.to_s %></div> -->
-    <p><%= @students.first_name @students.last_name %></p>
-    <p><%= @students.first_name @students.last_name %></p>
-    <!-- <% end %> -->
- </div>
+<div>
+  <% @students.each do |student| %>
+    <div><%= student.first_name + " " + student.last_name %></div>
+  <% end %>
+</div>
