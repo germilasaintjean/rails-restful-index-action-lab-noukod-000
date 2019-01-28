@@ -1,6 +1,5 @@
 class StudentsController < ApplicationController
-get '/view/students'
-@student = Student.all
- erb :"/view/students"
+  def index
+  @students = Student.all
   end
 end
